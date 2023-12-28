@@ -6,7 +6,7 @@ extension GetArgument on BuildContext {
     if (modalRoute != null) {
       final args = modalRoute.settings.arguments;
       if (args != null && args is T) {
-        return args as T;
+        return args;
       }
     }
     return null;
